@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.logo{
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+.calculator{
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background-size: cover;
+
+}
+input{
+    display: flex;
+    height: 100px;
+    opacity: 0.9;
+    width: 316px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans', sans-serif;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 20px;
+    text-align: right;
+
+}
+
+.btn{
+    color: #a1bde7;
+    border: 2px solid #404040;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #404040;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    row-gap: 10px;
+    width: 22rem;
+    height: 26rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.output{
+    background-color: #ffa500;
+    border: 2px solid #ffa500;
+}
+.operator{
+    color: #f1c6d9;
+}

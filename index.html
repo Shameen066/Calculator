@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="logo">calculator</div>
+        </nav>
+
+        <div class="calculator">
+            <form action="">
+            <div class="inputbox">
+                <input type="text" name="inputbox">
+            </div>
+            <div class="keys">
+                <div class="buttons">
+                    <div>
+                        <input type="button" value="C" class="btn operator" onclick="inputbox.value=' '"  ><br>
+                        <input type="button" value="7" class="btn" onclick="inputbox.value+='7' "><br>
+                        <input type="button" value="4" class="btn" onclick="inputbox.value+='4' "><br>
+                        <input type="button" value="1" class="btn" onclick="inputbox.value+='1'"><br>
+                        <input type="button" value="00" class="btn" onclick="inputbox.value+='00'">
+                    </div>
+                    <div>
+                        <input type="button" value="%" class="btn operator" onclick="inputbox.value+='%'"><br>
+                        <input type="button" value="8" class="btn" onclick="inputbox.value+='8'"><br>
+                        <input type="button" value="5" class="btn" onclick="inputbox.value+='5'"><br>
+                        <input type="button" value="2" class="btn" onclick="inputbox.value+='2'"><br>
+                        <input type="button" value="0" class="btn" onclick="inputbox.value+='0'">
+                    </div>
+                    <div>
+                        <input type="button" value="Del" class="btn operator"onclick="inputbox.value=inputbox.value.toString().slice(0,-1)"><br>
+                        <input type="button" value="9" class="btn" onclick="inputbox.value+='9'"><br>
+                        <input type="button" value="6" class="btn" onclick="inputbox.value+='6'"><br>
+                        <input type="button" value="3" class="btn" onclick="inputbox.value+='3'"><br>
+                        <input type="button" value="." class="btn operator" onclick="inputbox.value+='.'">
+                    </div>
+                    <div>
+                        <input type="button" value="/" class="btn operator" onclick="inputbox.value+='/'"><br>
+                        <input type="button" value="x" class="btn operator" onclick="inputbox.value+='*'"><br>
+                        <input type="button" value="-" class="btn operator" onclick="inputbox.value+='-'"><br>
+                        <input type="button" value="+" class="btn operator" onclick="inputbox.value+='+'"><br>
+                        <input type="button" value="=" class="btn operator" onclick="inputbox.value=eval(inputbox.value)">
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
